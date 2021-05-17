@@ -13,7 +13,7 @@ const helpers = require('./helpers.js')
 const fs = require('fs');
 
 // Command handler setup
-global.PREFIX = '!';
+global.PREFIX = '.';
 bot.commands = new Discord.Collection();
 
 global.featureFiles = fs.readdirSync('./features').filter(file => file.endsWith('.js')); // made global for help.js
